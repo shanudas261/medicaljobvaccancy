@@ -32,7 +32,7 @@ function Admin() {
   async function fetchJobs() {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/jobs"
+        "${import.meta.env.VITE_API_URL}/api/jobs"
       );
 
       setJobs(response.data);
@@ -60,7 +60,7 @@ function Admin() {
     try {
       if (editingId) {
         await axios.put(
-          `http://localhost:5000/api/jobs/${editingId}`,
+          `${import.meta.env.VITE_API_URL}/api/jobs/${editingId}`,
           formData,
           {
             headers: {
@@ -72,7 +72,7 @@ function Admin() {
         alert("Job updated successfully");
       } else {
         await axios.post(
-          "http://localhost:5000/api/jobs",
+          "${import.meta.env.VITE_API_URL}/api/jobs",
           formData,
           {
             headers: {
@@ -105,7 +105,7 @@ function Admin() {
 
     try {
       await axios.delete(
-        `http://localhost:5000/api/jobs/${id}`,
+        `${import.meta.env.VITE_API_URL}/api/jobs/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
