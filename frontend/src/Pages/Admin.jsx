@@ -32,7 +32,7 @@ function Admin() {
   async function fetchJobs() {
     try {
       const response = await axios.get(
-        "${import.meta.env.VITE_API_URL}/api/jobs"
+        `${import.meta.env.VITE_API_URL}/api/jobs`
       );
 
       setJobs(response.data);
@@ -72,7 +72,7 @@ function Admin() {
         alert("Job updated successfully");
       } else {
         await axios.post(
-          "${import.meta.env.VITE_API_URL}/api/jobs",
+          `${import.meta.env.VITE_API_URL}/api/jobs`,
           formData,
           {
             headers: {

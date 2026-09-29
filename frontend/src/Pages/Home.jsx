@@ -10,7 +10,7 @@ function Home() {
 
   useEffect(() => {
     axios
-      .get("${import.meta.env.VITE_API_URL}/api/jobs")
+      .get(`${import.meta.env.VITE_API_URL}/api/jobs`)
       .then((response) => {
         setJobs(response.data);
         setLoading(false);
