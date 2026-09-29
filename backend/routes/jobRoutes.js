@@ -1,6 +1,6 @@
 const express = require("express");
 const Job = require("../models/model");
-import { verifyToken } from "../middleware/authMiddleware";
+const verifyToken = require("../middleware/authMiddleware")
 const router = express.Router();
 
 // Add a new job
