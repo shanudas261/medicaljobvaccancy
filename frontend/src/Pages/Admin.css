@@ -1,0 +1,363 @@
+/* =========================
+   ADMIN PAGE
+========================= */
+
+.admin-page {
+  min-height: 100vh;
+  background: #f4f7fb;
+  color: #1f2937;
+}
+
+/* =========================
+   HEADER
+========================= */
+.admin-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logout-button {
+  border: none;
+  background: #fee2e2;
+  color: #dc2626;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.logout-button:hover {
+  background: #fecaca;
+}
+.admin-home-link {
+    
+    margin-left: 10px;
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: 600;
+  padding: 10px 16px;
+  border: 1px solid #2563eb;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.admin-home-link:hover {
+  background: #2563eb;
+  color: white;
+}
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.admin-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 35px 20px 60px;
+}
+
+/* =========================
+   FORM CARD
+========================= */
+
+.admin-form-card {
+  background: white;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
+  margin-bottom: 40px;
+}
+
+.admin-form-header {
+  margin-bottom: 25px;
+}
+
+.admin-form-header h2 {
+  margin: 0;
+  font-size: 22px;
+  color: #0f172a;
+}
+
+.admin-form-header p {
+  margin-top: 6px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.job-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-group label {
+  margin-bottom: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid #dbe1ea;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.form-group textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+/* =========================
+   FORM BUTTONS
+========================= */
+
+.form-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.primary-button {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.primary-button:hover {
+  background: #1d4ed8;
+}
+
+.cancel-button {
+  border: 1px solid #cbd5e1;
+  background: white;
+  color: #475569;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.cancel-button:hover {
+  background: #f1f5f9;
+}
+
+/* =========================
+   JOBS SECTION
+========================= */
+
+.jobs-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.jobs-section-header h2 {
+  margin: 0;
+  font-size: 22px;
+  color: #0f172a;
+}
+
+.job-count {
+  background: #dbeafe;
+  color: #1d4ed8;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* =========================
+   JOB LIST
+========================= */
+
+.admin-jobs-list {
+  display: grid;
+  gap: 15px;
+}
+
+.admin-job-card {
+  background: white;
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: 0 3px 15px rgba(15, 23, 42, 0.05);
+  border: 1px solid #eef2f7;
+}
+
+.admin-job-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.admin-job-info h3 {
+  margin: 0 0 7px;
+  font-size: 18px;
+  color: #0f172a;
+}
+
+.admin-job-company {
+  margin: 0 0 5px;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.admin-job-location {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.admin-job-actions {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.edit-button {
+  border: none;
+  background: #eff6ff;
+  color: #2563eb;
+  padding: 9px 15px;
+  border-radius: 7px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.edit-button:hover {
+  background: #dbeafe;
+}
+
+.delete-button {
+  border: none;
+  background: #fef2f2;
+  color: #dc2626;
+  padding: 9px 15px;
+  border-radius: 7px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background: #fee2e2;
+}
+
+/* =========================
+   EMPTY STATE
+========================= */
+
+.empty-jobs {
+  background: white;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 12px;
+  color: #64748b;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .admin-header {
+    padding: 18px 20px;
+  }
+
+  .admin-header-left h1 {
+    font-size: 21px;
+  }
+
+  .admin-container {
+    padding: 25px 15px 40px;
+  }
+
+  .admin-form-card {
+    padding: 20px;
+  }
+
+  .job-form {
+    grid-template-columns: 1fr;
+  }
+
+  .form-group.full-width {
+    grid-column: auto;
+  }
+
+  .form-actions {
+    grid-column: auto;
+    flex-direction: column;
+  }
+
+  .primary-button,
+  .cancel-button {
+    width: 100%;
+  }
+
+  .admin-job-top {
+    flex-direction: column;
+  }
+
+  .admin-job-actions {
+    width: 100%;
+  }
+
+  .edit-button,
+  .delete-button {
+    flex: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-header {
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .admin-home-link {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .jobs-section-header {
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
